@@ -2,7 +2,7 @@
 #### An application where users can create quotes, post and vote on them.
 #### By Francis Ngigi
 ## Description
-In Quote Overflow a user can create a new quote and post it using a form. he user can also upvote or dwonvote any quote, or delete it.
+In Quote Overflow a user can create a new quote and post it using a form. he user can also upvote or downvote any quote, or delete it.
 
 ## Development
 - Fork the repository
