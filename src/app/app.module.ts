@@ -5,16 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadsectionComponent } from './headsection/headsection.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { QuoteHighlighterDirective } from './quote-highlighter.directive';
+import { QuoteDetailsComponent } from './quotes/quote-details/quote-details.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadsectionComponent,
-    QuotesComponent
+    QuotesComponent,
+    QuoteHighlighterDirective,
+    QuoteDetailsComponent,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
