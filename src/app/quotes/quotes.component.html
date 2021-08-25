@@ -1,12 +1,24 @@
-
-<div class="container-fluid">
-    <ul *ngFor = 'let quote of quotes'>
-    <li>
+<div class="col">
+<div class="card w-25">
+    <div class="card-body">
+    <label class="card-title" for="title">Quote</label>
+    <ul *ngFor = 'let quote of quotes; let i = index'>
+    <li class="card-text">
         {{quote.quote}}
     </li>
-    <li> {{quote.author}} </li>
-    <li >{{quote.personSubmitting}} </li>
-    <li>{{quote.madeDate|date}} </li>
+    <li class="card text"> {{quote.author}} </li>
+    <button class="btn btn-primary" onclick="style">Show more?</button>
+    <hr>
+    <div class="invisible">
+    
+        <li >{{quote.personSubmitting}} </li>
+    <li>{{quote.madeDate | date}} </li>
+    <li>{{quote.upVote}} </li>
+    <li> {{quote.downVote}} </li>
+    </div>
+    
     </ul>
+    </div>
+</div>
 </div>
   
